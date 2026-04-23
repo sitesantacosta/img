@@ -41,7 +41,7 @@ jobs:
             convert "$photo" -resize 400x -quality 75 "thumb/$dir_path/${basename}.webp"
 
             # 2. GERAR FULL (Qualidade Alta - 2048px)
-            convert "$photo" -resize '2048x>' -quality 90 -define webp:method=6 -define webp:thread-level=1 "full/$dir_path/${basename}.webp"
+            convert "$photo" -resize '2048x>' -quality 90 -interlace plane "full/$dir_path/${basename}.jpg"
 
             # 3. Limpeza: apaga a imagem original processada
             rm "$photo"
