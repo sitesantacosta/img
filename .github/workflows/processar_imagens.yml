@@ -36,12 +36,16 @@ jobs:
             # Cria as pastas de destino
             mkdir -p "thumb/$dir_path"
             mkdir -p "full/$dir_path"
+            mkdir -p "zoom/$dir_path"
 
             # Gerar THUMB (800px)
             convert "$photo" -resize '800x>' -quality 70 -interlace plane "thumb/$dir_path/${basename}.jpg"
 
             # Gerar FULL (1920px)
-            convert "$photo" -resize '1920x>' -quality 70 -interlace plane "full/$dir_path/${basename}.jpg"
+            convert "$photo" -resize '1920x>' -quality 75 -interlace plane "full/$dir_path/${basename}.jpg"
+
+            # Gerar ZOOM 
+            convert "$photo" -quality 80 -interlace plane "zoom/$dir_path/${basename}.jpg"
 
             # Limpeza: apaga a original para manter o repo limpo
             rm "$photo"
