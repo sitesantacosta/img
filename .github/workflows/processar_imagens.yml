@@ -38,10 +38,12 @@ jobs:
             mkdir -p "full/$dir_path"
 
             # 1. GERAR THUMB
-            convert "$photo" -resize 400x -quality 75 "thumb/$dir_path/${basename}.webp"
+            convert "$photo" -resize 600x -quality 80 "thumb/$dir_path/${basename}.webp"
 
             # 2. GERAR FULL (Qualidade Alta - 2048px)
-            convert "$photo" -resize '2048x>' -quality 90 -interlace plane "full/$dir_path/${basename}.jpg"
+            convert "$photo" -resize '2048x>' -quality 80 -interlace plane "full/$dir_path/${basename}-80.jpg"
+            convert "$photo" -resize '2048x>' -quality 75 -interlace plane "full/$dir_path/${basename}-75.jpg"
+            convert "$photo" -resize '2048x>' -quality 70 -interlace plane "full/$dir_path/${basename}-70.jpg"
 
             # 3. Limpeza: apaga a imagem original processada
             rm "$photo"
