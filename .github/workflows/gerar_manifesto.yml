@@ -1,12 +1,15 @@
 name: Gerar Manifesto de Imagens
 on:
-  push:
-    paths:
-      - 'full/**'
+  workflow_run:
+    workflows: ["Processamento SANTACOSTA PRO"] # O nome EXATO que está no seu processar_imagens.yml
+    types:
+      - completed
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Só executa se o processamento de imagens terminou com SUCESSO
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
       - uses: actions/checkout@v3
       
@@ -18,10 +21,11 @@ jobs:
       - name: Gerar JSON
         run: python gerar_manifesto.py
 
-      - name: Commit e Push
+      - name: Commit e Push com Rebase
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
+          git pull --rebase origin main
           git add manifesto.json
-          git commit -m "Auto: Atualizando mapa de imagens" || exit 0
+          git commit -m "Auto: Atualizando manifesto de imagens" || exit 0
           git push
