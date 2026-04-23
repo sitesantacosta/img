@@ -1,0 +1,27 @@
+name: Gerar Manifesto de Imagens
+on:
+  push:
+    paths:
+      - 'full/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Gerar JSON
+        run: python gerar_manifesto.py
+
+      - name: Commit e Push
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add manifesto.json
+          git commit -m "Auto: Atualizando mapa de imagens" || exit 0
+          git push
