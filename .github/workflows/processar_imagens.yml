@@ -1,14 +1,14 @@
-name: Processamento SANTACOSTA PRO
+name: Processamento IMAGENS e JSON Geral
 on:
   push:
     branches:
       - main
     paths:
-      - 'originais/**' # O gatilho: ativa assim que algo cair aqui dentro
+      - 'originais/**' 
   workflow_dispatch:
 
 jobs:
-  process_images:
+  process_and_manifest:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -17,41 +17,41 @@ jobs:
       - name: Checkout do código
         uses: actions/checkout@v4
 
-      - name: Instalar ImageMagick
+      - name: Instalar ImageMagick e Python
         run: |
           sudo apt-get update
           sudo apt-get install -y imagemagick
+          # Python 3 já vem pré-instalado nos ambientes do GitHub Actions
 
-      - name: Processar e Criar Pastas
+      - name: 1. Processar Imagens (Thumbs e Full)
         run: |
-          # Procura qualquer imagem suportada dentro da pasta originais
+          # Procura imagens na pasta originais
           find originais -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.heic" -o -iname "*.heif" \) | while read -r photo; do
             
-            # Descobre se a imagem tá solta ou dentro de uma subpasta (como TRABALHOS)
             rel_path="${photo#originais/}"
             dir_path=$(dirname "$rel_path")
             filename=$(basename "$photo")
             basename="${filename%.*}"
 
-            # O comando mkdir -p cria a pasta automaticamente se ela não existir
+            # Cria as pastas de destino
             mkdir -p "thumb/$dir_path"
             mkdir -p "full/$dir_path"
 
-            # 1. GERAR THUMB
+            # Gerar THUMB (800px)
             convert "$photo" -resize '800x>' -quality 70 -interlace plane "thumb/$dir_path/${basename}.jpg"
 
-            # 2. GERAR FULL (Qualidade Alta - 2048px)
+            # Gerar FULL (1920px)
             convert "$photo" -resize '1920x>' -quality 70 -interlace plane "full/$dir_path/${basename}.jpg"
 
-            # 3. Limpeza: apaga a imagem original processada
+            # Limpeza: apaga a original para manter o repo limpo
             rm "$photo"
           done
-
-          # Cria um arquivo oculto para o Git não apagar a pasta vazia
           touch originais/.gitkeep
 
-      - name: Salvar Alterações no Repositório
+      - name: 2. Gerar Manifesto JSON
+        run: python gerar_manifesto.py
+
+      - name: 3. Salvar Alterações (Imagens + Manifesto)
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Auto: Imagens originais convertidas para webp [skip ci]"
-          # Sem file_pattern: força o robô a salvar TODAS as alterações (pastas criadas e originais deletados)
+          commit_message: "Auto: Imagens processadas e Manifesto atualizado [skip ci]"
