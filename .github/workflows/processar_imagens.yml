@@ -47,6 +47,9 @@ jobs:
             rm "$photo"
           done
 
+          # Cria um arquivo oculto para o Git não apagar a pasta vazia
+          touch originais/.gitkeep
+
       - name: Salvar Alterações no Repositório
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
