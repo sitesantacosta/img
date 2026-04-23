@@ -1,0 +1,63 @@
+name: Processamento SANTACOSTA PRO
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'img/originais/**'
+  workflow_dispatch:
+
+jobs:
+  process_images:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Instalar ImageMagick
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
+
+      - name: Processar com Fidelidade de Cor e Textura
+        run: |
+          # Procura imagens na pasta de originais
+          find img/originais -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.heic" -o -iname "*.heif" \) | while read -r photo; do
+            
+            # Identifica o caminho relativo e as pastas (EXPOS, TRABALHOS, etc.)
+            rel_path=${photo#img/originais/}
+            slug_folder=$(dirname "$rel_path")
+            filename=$(basename "$photo")
+            basename="${filename%.*}"
+
+            echo "Processando: $filename em $slug_folder"
+
+            # Cria as pastas de destino (thumb e full) dentro de /img/
+            mkdir -p "img/thumb/$slug_folder"
+            mkdir -p "img/full/$slug_folder"
+
+            # 1. GERAR THUMB (Miniatura de 400px)
+            convert "$photo" -resize 400x -quality 75 "img/thumb/$slug_folder/${basename}.webp"
+
+            # 2. GERAR FULL (Versão de alta fidelidade para obras de arte)
+            # - Manutenção do Perfil de Cor (sem -strip)
+            # - Resolução de 2048px para telas Retina/4K
+            # - Compressão método 6 para preservar texturas
+            convert "$photo" -resize '2048x>' \
+                    -quality 90 \
+                    -define webp:method=6 \
+                    -define webp:thread-level=1 \
+                    "img/full/$slug_folder/${basename}.webp"
+
+            # Limpeza: Deleta o arquivo original do GitHub após o processamento
+            rm "$photo"
+          done
+
+      - name: Enviar Alterações para o GitHub
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Processamento Pro: Imagens convertidas para /full e /thumb [skip ci]"
+          file_pattern: 'img/full/** img/thumb/** img/originais/**'
