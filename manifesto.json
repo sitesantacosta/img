@@ -1,97 +1,14 @@
 {
   "trabalhos": {
-    "2017-swish-wish-2": [
-      "01.jpg",
-      "02.jpg"
-    ],
-    "2025-3-os-serie-a-fome-do-tempo": [
-      "01.jpg",
-      "02.jpg",
-      "03.jpg"
-    ],
-    "2025-h-serie-rastros-de-gestos": [
-      "01.jpg",
-      "02.jpg",
-      "03.jpg"
-    ],
-    "2017-sobreposicao-e-deslocamento": [
+    "2017-britney": [
       "01.jpg",
       "02.jpg"
     ],
     "2013-2015-cova-reminiscencias-e-aquilo-que-devo-lembrar": [
       "01.jpg"
     ],
-    "2018-frozen": [
+    "2016-tamanco": [
       "01.jpg"
-    ],
-    "2014-lua": [
-      "01.jpg"
-    ],
-    "2019-escultura-desenho": [
-      "01.jpg",
-      "02.jpg",
-      "03.jpg"
-    ],
-    "2019-serie-pilha-n14": [
-      "01.jpg"
-    ],
-    "2010-2011-long-hard-road-out-of-hell": [
-      "01.jpg"
-    ],
-    "2014-wilson-levitante": [
-      "01.jpg"
-    ],
-    "2019-insight-e-ordenacao-ii": [
-      "01.jpg"
-    ],
-    "2014-serpentarius": [
-      "01.jpg"
-    ],
-    "2017-hercules-luna": [
-      "01.jpg"
-    ],
-    "2019-escultura-de-colagem": [
-      "01.jpg",
-      "02.jpg",
-      "03.jpg"
-    ],
-    "2019-serie-pilha-n16": [
-      "01.jpg"
-    ],
-    "2024-azedo": [
-      "01.jpg",
-      "02.jpg",
-      "03.jpg",
-      "04.jpg"
-    ],
-    "2019-objeto-de-parede-vi": [
-      "01.jpg",
-      "02.jpg"
-    ],
-    "2024-n1-serie-a-fome-do-tempo": [
-      "01.jpg",
-      "02.jpg",
-      "03.jpg",
-      "04.jpg"
-    ],
-    "2015-variacao-viii": [
-      "01.jpg"
-    ],
-    "2018-blackbird": [
-      "01.jpg"
-    ],
-    "2018-fardo": [
-      "01.jpg",
-      "02.jpg"
-    ],
-    "2013-estrutura-vi": [
-      "01.jpg"
-    ],
-    "2019-pintura-dsplay": [
-      "01.jpg",
-      "02.jpg",
-      "03.jpg",
-      "04.jpg"
     ],
     "2025-ai-serie-rastros-de-gestos": [
       "01.jpg",
@@ -100,7 +17,105 @@
       "04.jpg",
       "05.jpg"
     ],
-    "2013-estrutura-i": [
+    "2025-3-os-serie-a-fome-do-tempo": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg"
+    ],
+    "2018-frozen": [
+      "01.jpg"
+    ],
+    "2014-outra-lingua": [
+      "01.jpg"
+    ],
+    "2016-la-escalera": [
+      "01.jpg"
+    ],
+    "2015-variacao-viii": [
+      "01.jpg"
+    ],
+    "2013-estrutura-v": [
+      "01.jpg"
+    ],
+    "2014-resgate-unicornio": [
+      "01.jpg"
+    ],
+    "2013-estrutura-ii": [
+      "01.jpg"
+    ],
+    "2017-sobreposicao-e-deslocamento": [
+      "01.jpg",
+      "02.jpg"
+    ],
+    "2015-ninho": [
+      "01.jpg"
+    ],
+    "2017-3pra12": [
+      "01.jpg",
+      "02.jpg"
+    ],
+    "2017-infantario-pareado": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg"
+    ],
+    "2018-fardo": [
+      "01.jpg",
+      "02.jpg"
+    ],
+    "2017-hercules-luna": [
+      "01.jpg"
+    ],
+    "2017-swish-wish-2": [
+      "01.jpg",
+      "02.jpg"
+    ],
+    "2026-olho-de-tilda": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg"
+    ],
+    "2016-o-sol-e-o-unicornio": [
+      "01.jpg"
+    ],
+    "2014-wilson-levitante": [
+      "01.jpg"
+    ],
+    "2019-o-equilibrista": [
+      "01.jpg"
+    ],
+    "2019-serie-pilha-n14": [
+      "01.jpg"
+    ],
+    "2016-juncao-exposta": [
+      "01.jpg"
+    ],
+    "2025-corte-ruivo": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg"
+    ],
+    "2024-azedo": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg"
+    ],
+    "2017-11-degraus": [
+      "01.jpg",
+      "02.jpg"
+    ],
+    "2013-estrutura-vi": [
+      "01.jpg"
+    ],
+    "2025-o-serie-a-fome-do-tempo": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg"
+    ],
+    "2015-coral-vi": [
       "01.jpg"
     ],
     "2017-palavras-cruzadas": [
@@ -108,9 +123,73 @@
       "02.jpg",
       "03.jpg"
     ],
+    "2018-pequeno-deslocamento": [
+      "01.jpg",
+      "02.jpg"
+    ],
+    "2014-juncao-encoberta": [
+      "01.jpg"
+    ],
+    "2012-orion": [
+      "01.jpg"
+    ],
+    "2019-n4-cartoes-que-nao-dei": [
+      "01.jpg",
+      "02.jpg"
+    ],
+    "2018-white-stripes": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg"
+    ],
+    "2014-clayborn": [
+      "01.jpg"
+    ],
+    "2019-tensao-e-ruptura": [
+      "01.jpg"
+    ],
+    "2011-mafalda": [
+      "01.jpg"
+    ],
+    "2024-n1-serie-a-fome-do-tempo": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg"
+    ],
     "2017-swish-wish-3": [
       "01.jpg",
       "02.jpg"
+    ],
+    "2014-serpentarius": [
+      "01.jpg"
+    ],
+    "2018-trava-negra": [
+      "01.jpg"
+    ],
+    "2018-blackbird": [
+      "01.jpg"
+    ],
+    "2019-objeto-de-parede-vi": [
+      "01.jpg",
+      "02.jpg"
+    ],
+    "2013-estrutura-i": [
+      "01.jpg"
+    ],
+    "2025-curativo": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg"
+    ],
+    "2015-over-bikini-wasabi": [
+      "01.jpg"
+    ],
+    "2024-disputa": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg"
     ],
     "2019-pilha-ascendente": [
       "01.jpg",
@@ -120,121 +199,73 @@
       "05.jpg",
       "06.jpg"
     ],
-    "2015-ninho": [
+    "2014-lua": [
       "01.jpg"
     ],
-    "2025-curativo": [
-      "01.jpg",
-      "02.jpg",
-      "03.jpg"
+    "2015-3pra1": [
+      "01.jpg"
     ],
-    "2018-white-stripes": [
+    "2025-v-serie-rastros-de-gestos": [
       "01.jpg",
       "02.jpg",
       "03.jpg",
       "04.jpg"
     ],
-    "2018-trava-negra": [
+    "2010-2011-long-hard-road-out-of-hell": [
       "01.jpg"
     ],
-    "2015-pequenos-traumas-urbanos-iii": [
-      "01.jpg"
-    ],
-    "2012-orion": [
-      "01.jpg"
-    ],
-    "2017-11-degraus": [
-      "01.jpg",
-      "02.jpg"
-    ],
-    "2025-o-serie-a-fome-do-tempo": [
+    "2019-escultura-desenho": [
       "01.jpg",
       "02.jpg",
       "03.jpg"
-    ],
-    "2014-outra-lingua": [
-      "01.jpg"
-    ],
-    "2016-la-escalera": [
-      "01.jpg"
-    ],
-    "2024-fases-tramadas": [
-      "01.jpg",
-      "02.jpg",
-      "03.jpg",
-      "04.jpg",
-      "05.jpg"
     ],
     "2018-animal-negro": [
       "01.jpg",
       "02.jpg"
     ],
-    "2019-reflexos-trinos": [
+    "2019-serie-pilha-n16": [
       "01.jpg"
     ],
-    "2016-juncao-exposta": [
+    "2012-draco": [
       "01.jpg"
     ],
-    "2014-trago-do-silencio": [
+    "2015-objeto-de-parede-iv": [
       "01.jpg"
     ],
-    "2016-tamanco": [
+    "2019-insight-e-ordenacao-ii": [
       "01.jpg"
-    ],
-    "2013-estrutura-v": [
-      "01.jpg"
-    ],
-    "2017-infantario-pareado": [
-      "01.jpg",
-      "02.jpg",
-      "03.jpg"
     ],
     "2014-over-i": [
       "01.jpg"
     ],
-    "2014-clayborn": [
-      "01.jpg"
-    ],
-    "2014-bg": [
-      "01.jpg"
-    ],
-    "2025-corte-ruivo": [
+    "2017-swish-wish-1": [
       "01.jpg",
-      "02.jpg",
-      "03.jpg"
+      "02.jpg"
     ],
-    "2013-estrutura-ii": [
-      "01.jpg"
-    ],
-    "2018-insight-e-ordenacao": [
-      "01.jpg"
-    ],
-    "2026-olho-de-tilda": [
+    "2019-pintura-dsplay": [
       "01.jpg",
       "02.jpg",
       "03.jpg",
-      "04.jpg",
-      "05.jpg"
+      "04.jpg"
     ],
-    "2015-coral-vi": [
+    "2016-badalo": [
       "01.jpg"
     ],
     "2014-estrutura-vii": [
       "01.jpg"
     ],
-    "2019-n4-cartoes-que-nao-dei": [
-      "01.jpg",
-      "02.jpg"
+    "2014-estrutura-viii": [
+      "01.jpg"
     ],
-    "2017-britney": [
+    "2025-h-serie-rastros-de-gestos": [
       "01.jpg",
-      "02.jpg"
+      "02.jpg",
+      "03.jpg"
     ],
-    "2018-objeto-de-parede-v": [
-      "01.jpg",
-      "02.jpg"
+    "2018-insight-e-ordenacao": [
+      "01.jpg"
     ],
-    "2019-o-equilibrista": [
+    "2014-balyba": [
       "01.jpg"
     ],
     "2024-tronco-mascara": [
@@ -244,15 +275,33 @@
       "04.jpg",
       "05.jpg"
     ],
-    "2015-objeto-de-parede-iv": [
+    "2019-reflexos-trinos": [
       "01.jpg"
     ],
-    "2015-over-bikini-wasabi": [
+    "2015-pequenos-traumas-urbanos-iii": [
       "01.jpg"
     ],
-    "2017-3pra12": [
+    "2014-bg": [
+      "01.jpg"
+    ],
+    "2018-objeto-de-parede-v": [
       "01.jpg",
       "02.jpg"
+    ],
+    "2019-escultura-de-colagem": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg"
+    ],
+    "2024-fases-tramadas": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg"
+    ],
+    "2014-trago-do-silencio": [
+      "01.jpg"
     ],
     "2019-serie-pilha-n17": [
       "01.jpg"
@@ -260,55 +309,6 @@
     "2019-petite-voiture": [
       "01.jpg",
       "02.jpg"
-    ],
-    "2025-v-serie-rastros-de-gestos": [
-      "01.jpg",
-      "02.jpg",
-      "03.jpg",
-      "04.jpg"
-    ],
-    "2014-juncao-encoberta": [
-      "01.jpg"
-    ],
-    "2015-3pra1": [
-      "01.jpg"
-    ],
-    "2017-swish-wish-1": [
-      "01.jpg",
-      "02.jpg"
-    ],
-    "2012-draco": [
-      "01.jpg"
-    ],
-    "2014-resgate-unicornio": [
-      "01.jpg"
-    ],
-    "2014-balyba": [
-      "01.jpg"
-    ],
-    "2016-o-sol-e-o-unicornio": [
-      "01.jpg"
-    ],
-    "2024-disputa": [
-      "01.jpg",
-      "02.jpg",
-      "03.jpg"
-    ],
-    "2016-badalo": [
-      "01.jpg"
-    ],
-    "2014-estrutura-viii": [
-      "01.jpg"
-    ],
-    "2018-pequeno-deslocamento": [
-      "01.jpg",
-      "02.jpg"
-    ],
-    "2019-tensao-e-ruptura": [
-      "01.jpg"
-    ],
-    "2011-mafalda": [
-      "01.jpg"
     ],
     "2026-io-serie-rastros-de-gestos": [
       "01.jpg",
@@ -319,30 +319,11 @@
       "06.jpg"
     ]
   },
-  "noticias": {
-    "todas": [
-      "convite-25o-salao-praia-grande.jpg",
-      "convite-atelie-aberto-lava.jpg",
-      "convite-exposicao-over-witty.jpg",
-      "convite-galeria-de-artes-e-pesquisa-ufes-2019.jpg",
-      "convite-mab-2018.jpg",
-      "convite-slac-2018.jpg",
-      "galeria-lambs-arts-sp-2019.jpg",
-      "residencia-w-ribeirao-preto-2019.jpg",
-      "revista-dardo.jpg"
-    ]
-  },
+  "noticias": {},
   "expos": {
-    "2025-labirinto-mistico": [
-      "0_capa.jpg",
-      "250826_rafael_massape_006.jpg",
-      "250826_rafael_massape_012.jpg",
-      "250826_rafael_massape_017.jpg",
-      "250826_rafael_massape_025.jpg",
-      "250826_rafael_massape_035.jpg",
-      "250826_rafael_massape_049.jpg",
-      "250826_rafael_massape_058.jpg",
-      "destaque.jpg"
+    "2018-lava": [
+      "01.jpg",
+      "02.jpg"
     ],
     "2024-transmutacao": [
       "240717_rafael_massape_130.jpg",
@@ -355,21 +336,14 @@
       "01.jpg",
       "02.jpg"
     ],
-    "2018-lava": [
-      "01.jpg",
-      "02.jpg"
-    ],
-    "2017-its-all-over": [
-      "01.jpg",
-      "02.jpg"
-    ],
     "2018-26o-slac": [
       "01.jpg",
       "02.jpg"
     ],
-    "2018-sobe-o-sol-ou-a-noite-desce": [
+    "2019-dia-1o-9o-andar": [
       "01.jpg",
-      "02.jpg"
+      "02.jpg",
+      "03.jpg"
     ],
     "2016-over-witty": [
       "01.jpg",
@@ -381,11 +355,6 @@
       "07.jpg",
       "08.jpg"
     ],
-    "2019-dia-1o-9o-andar": [
-      "01.jpg",
-      "02.jpg",
-      "03.jpg"
-    ],
     "2019-sirva-se-do-que-quiser": [
       "01.jpg",
       "02.jpg",
@@ -393,6 +362,25 @@
     ],
     "2019-residencia-w-edicao-5": [
       "01.jpg"
+    ],
+    "2017-its-all-over": [
+      "01.jpg",
+      "02.jpg"
+    ],
+    "2018-sobe-o-sol-ou-a-noite-desce": [
+      "01.jpg",
+      "02.jpg"
+    ],
+    "2025-labirinto-mistico": [
+      "0_capa.jpg",
+      "250826_rafael_massape_006.jpg",
+      "250826_rafael_massape_012.jpg",
+      "250826_rafael_massape_017.jpg",
+      "250826_rafael_massape_025.jpg",
+      "250826_rafael_massape_035.jpg",
+      "250826_rafael_massape_049.jpg",
+      "250826_rafael_massape_058.jpg",
+      "destaque.jpg"
     ]
   }
 }
