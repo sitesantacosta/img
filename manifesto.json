@@ -319,7 +319,23 @@
       "06.jpg"
     ]
   },
-  "noticias": {},
+  "noticias": {
+    "todas": [
+      "2024-transmutacao.jpg",
+      "2025-labirinto-mistico.jpg",
+      "2025-menage-3-edicao.jpg",
+      "2025-sac-54.jpg",
+      "convite-25o-salao-praia-grande.jpg",
+      "convite-atelie-aberto-lava.jpg",
+      "convite-exposicao-over-witty.jpg",
+      "convite-galeria-de-artes-e-pesquisa-ufes-2019.jpg",
+      "convite-mab-2018.jpg",
+      "convite-slac-2018.jpg",
+      "galeria-lambs-arts-sp-2019.jpg",
+      "residencia-w-ribeirao-preto-2019.jpg",
+      "revista-dardo.jpg"
+    ]
+  },
   "expos": {
     "2018-lava": [
       "01.jpg",
